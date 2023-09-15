@@ -1,25 +1,21 @@
-const estudiantes = [
-    { nombre: "Juan", edad: 20, notas: [85, 98, 78, 88, 90] },
-    { nombre: "María", edad: 21, notas: [75, 80, 92, 89, 78] },
-    { nombre: "Carlos", edad: 22, notas: [95, 88, 76, 92, 84] },
-    { nombre: "Pedro", edad: 21, notas: [80, 82, 88, 90, 85] },
-    { nombre: "Daniel", edad: 21, notas: [85, 80, 61, 90, 82] }
-]
+//  #1Numeros del 1 al 10 fon for. FUNCIONA
 
-let acumulador = 0;
-let contador = 0;
-let promedio = 0;
+//  for (let index = 0; index < 11; index++) {
+//     document.write(index);
+    
+// }
 
-for (let index = 0; index < estudiantes.length; index++) {
-    const estudiante = estudiantes [index];
-    const notas = estudiante.notas;
-    document.write(notas);
 
-    for (let j = 0; j < notas.length; j++) {
-        const nota = notas[j];
-        acumulador = acumulador + nota;
-        contador = contador +1;  
-    }
-promedio = acumulador/contador;
+// #2Mostrar los numeros del 12 al 24. FUNCIONA
+
+//  for (let index = 12; index <=24; index++) 
+//  {document.write (index + ",")
+    
+//  }
+
+// #3 — Print the ODD numbers from 7 to 31 FUNCIONA
+
+for (let index = 7; index <= 31; index++) {
+    if (index % 2 != 0) {document.write(index);}
+    
 }
-console.log(promedio)
