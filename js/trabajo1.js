@@ -10,10 +10,11 @@ let acumulador = 0;
 let contador = 0;
 let promedio = 0;
 
+
 for (let index = 0; index < estudiantes.length; index++) {
     const estudiante = estudiantes [index];
     const notas = estudiante.notas;
-    document.write(notas);
+    
 
     for (let j = 0; j < notas.length; j++) {
         const nota = notas[j];
@@ -23,3 +24,34 @@ for (let index = 0; index < estudiantes.length; index++) {
 promedio = acumulador/contador;
 }
 console.log(promedio)
+
+let min = Infinity;
+let nombreNotaMinima 
+let max = -Infinity
+let nombreNotaMaxima
+
+for (let index = 0; index < estudiantes.length; index++) {
+    const estudiante = estudiantes [index];
+    const notas = estudiante.notas;
+
+    for (let j = 0; j < notas.length; j++) {
+        const nota = notas[j];
+
+        if (nota < min ) {
+        min = nota;
+        nombreNotaMinima = estudiante.nombre}
+
+        if (nota > max) {
+            max = nota;
+            nombreNotaMaxima = estudiante.nombre
+        }
+         
+    }
+
+}
+document.write(`Nota mas baja: `, min, ` del alumno `, nombreNotaMinima,)
+document.write(`Nota mas alta: `, max, ` del alumno `, nombreNotaMaxima)
+
+
+
+
