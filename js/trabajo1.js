@@ -23,7 +23,7 @@ for (let index = 0; index < estudiantes.length; index++) {
     }
 promedio = acumulador/contador;
 }
-console.log(promedio)
+document.write(`El promedio general es`, promedio)
 
 let min = Infinity;
 let nombreNotaMinima 
