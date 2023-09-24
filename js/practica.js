@@ -60,19 +60,19 @@
 // #7 — SUMA PROMEDIO DE UN ARRAY. Ultima linea muestra
 // el primer numero de un array FUNCIONAAAAAA!!!
 
-let numbers = [1, 13, 22, 123, 49];
-let suma = 0;
-let cantidadElementos = numbers.length;
+// let numbers = [1, 13, 22, 123, 49];
+// let suma = 0;
+// let cantidadElementos = numbers.length;
 
-for (let index = 0; index < numbers.length; index++) {
-    suma += numbers[index];
+// for (let index = 0; index < numbers.length; index++) {
+//     suma += numbers[index];
     
-}
+// }
    
- document.write(`el resultado es:`+suma);
- document.write(cantidadElementos);
- let promedio = suma/cantidadElementos;
- document.write(promedio)
+//  document.write(`el resultado es:`+suma);
+//  document.write(cantidadElementos);
+//  let promedio = suma/cantidadElementos;
+//  document.write(promedio)
 
 
 //  Muestra el primer elemento del array
@@ -86,7 +86,41 @@ for (let index = 0; index < numbers.length; index++) {
 //   let comma = 23.548756;
 //   document.write(comma.toFixed(2));
 
-let numero = -1/0;
-alert (numero);
+// let numero = -1/0;
+// alert (numero);
 
+// IF+ELSE cada else if lleve una condicion
+//   let sabor = "limon" 
+
+//   if (sabor === "chocolate") {
+//     alert (`mi sabor favorito es` + sabor); }
+
+//     else if (sabor === "dulce de leche") {alert(` Yo no pedi esto`)}
   
+//  else {alert (`anda a cagar`)}
+
+// let speed = 150;
+
+// if ((speed > 80) && (speed< 121)) 
+// {alert(` you are not speeding, moron`)}
+// else {alert("slow the fuck down!!!")}
+
+
+// function velocidad (distancia, tiempo)
+// {return(distancia/tiempo)}
+
+// let mivelocidad = velocidad (80, 0.2)
+// alert(mivelocidad)
+
+// let pisoDpto = 28; 
+// for (let index = 0; index < 28; index++) {
+// if(index==3) {continue};
+//     document.write(pisoDpto);}
+
+let count = 0;
+
+do {
+    document.writeln("I don't know what I am doing here! <br>");
+    
+    count++;
+} while (count < 10);
