@@ -61,6 +61,8 @@ let contador=0
 let acumulador=0
 let promediogral=0
 
+
+
 arrayTp.forEach(estudiantes => {
    
     const lista = "<p>"+estudiantes.nombre + ", promedio: " + estudiantes.promedio +"</p>";
@@ -74,14 +76,14 @@ arrayTp.forEach(estudiantes => {
 for (let index = 0; index < arrayTp.length; index++) {
     const estudiante = curso.estudiantes [index];
     const promedio = estudiante.promedio;
-    
+    const nombre = estudiante.nombre
         acumulador = acumulador + promedio;
         contador = contador +1;  
+        if (promedio == 10) 
+        {document.write(`mejores notas: `,nombre, promedio,)}
     }
 promediogral= acumulador/contador;
 
 document.write(`El promedio general es: `, promediogral);
 
 // Alumnos con 10
-const promedio10 = estudiantes.promedio;
-console.log(promedio10)
