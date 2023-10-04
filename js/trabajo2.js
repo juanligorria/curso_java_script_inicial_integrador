@@ -77,6 +77,7 @@ for (let index = 0; index < arrayTp.length; index++) {
     const estudiante = curso.estudiantes [index];
     const promedio = estudiante.promedio;
     const nombre = estudiante.nombre
+    // if (promedio==10) {}
         acumulador = acumulador + promedio;
         contador = contador +1;  
         if (promedio == 10) 

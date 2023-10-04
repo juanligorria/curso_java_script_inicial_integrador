@@ -9,3 +9,4 @@
 let botones= document.querySelectorAll(".btn");
 botones.forEach(boton => boton.addEventListener
     ("click", function(event) {console.log("muy dificil") }))
+.style {color }
