@@ -4,11 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-</head>
-<body>
-    <button class="modalOn" id="modalOn">Modal on</button>
-    <button class="modalOff" id="modalOff">Modal off</button>
-    <div id="modal" style="height: 100%; 
+<style>
+
+    /* Se crean 3 cajas. Una es el fondo que bloquea la pantalla, 
+    otra, la cajita que aparece al bloquearse la pantalla, y la ultima, 
+    la que contiene la x para cerrar el modal. 
+    Tambien es importante hacer un cierre al modal al cliquear en alguna parte
+    de la pagina. */
+.modal {background-color: grey; 
+    height: 100%;
     width: 100%;
     border-style: solid; 
     background-color: grey; 
@@ -17,20 +21,43 @@
      align-items: center;
      position:fixed; 
      top:0;
-     left:0;">
-     <div style="position: relative; background-color: burlywood;
+     left:0;}
+   
+
+#cajainterior {position: relative; 
+    background-color: burlywood;
      border-radius: 5%; border-style: ridge;
-     border-width: 5px
-     ; height: 150px;
-     width: 200px;">
+     border-width: 5px; 
+     height: 350px;
+     width: 400px;}
+
+
+.cerrarmodal {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 22px;}
+
+</style>
+
+
+
+
+</head>
+<body>
+    <button class="modalOn" id="modalOn">Modal on</button>
+    
+    <div id="modal" class="modal">
+
+     <div id="cajainterior">
      <h1>Cerrar</h1>
-      <div class="cerrarmodal"
-      style="position: absolute;
-      top: 10px;
-      right: 10px;
-      cursor: pointer;
-      font-size: 22px;">&times;</div>
+      <div class="cerrarmodal">&times;</div>
+      <h2>Ingrese un numero</h2>
+      <input type="number" class="inputmodal" id="inputmodal">
+      <button class="enviar" id="enviar">Enviar</button>
     </div>
+
      </div>
     
     
