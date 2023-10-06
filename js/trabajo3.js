@@ -10,5 +10,9 @@ modalOn.addEventListener("click", () => {modal.style.display = `flex`});
 
 modalOff.addEventListener("click", () => {modal.style.display = `none`});
 
-botonEnviar.addEventListener("click", () => {modal.style.display = `none`, 
-console.log(input.value)})
+botonEnviar.addEventListener("click", () => {modal.style.display = `none`
+
+if (input.value == "") {alert("El campo no puede estar vacio")}
+console.log(input.value)
+
+})
