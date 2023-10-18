@@ -1,7 +1,7 @@
-
 let peticion = new XMLHttpRequest();
 
-let maxPrice = -Infinity
+
+precioMax = -Infinity;
 
 // HAGO LA PETICION
 
@@ -24,22 +24,30 @@ peticion.onreadystatechange = () => {
 
             const autos = `<div><p><h3>Auto:</h3>${element.name}</p>
 
-             <p><img width=200px, height=200px, 
+             <p><img width=250px, height=200px, 
              src=${element.image_field
                 } alt="Imagen auto"><p/>
 
              <p>Precio:${element.price}</p>
 
-             <p><button class="masinfo">Clickity Clickity</button><p/>`
+             <p><button class="masinfo">Mas info</button><p/>`
+
+
 
             let caja = document.querySelector(".caja");
             caja.insertAdjacentHTML("beforeend", autos);
 
 // PRODUCTO MAS CARO
-        
-        if (element.price > maxPrice) {
-    maxPrice = element.price
- }
+
+catalogo.forEach(element => {
+    
+    if (element.price > precioMax) {
+       precioMax = element.price
+    }});
+
+    if (element.price == precioMax) 
+    {console.log(element.name,element.price)}
+
 
 
         });
