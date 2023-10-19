@@ -17,8 +17,8 @@ peticion.onreadystatechange = () => {
         console.log(catalogo);
 
 
- // MUESTRO  LISTA DE PRODUCTOS+FOTOS, 
-//  DENTRO DE UN  DIV
+        // MUESTRO  LISTA DE PRODUCTOS+FOTOS, 
+        //  DENTRO DE UN  DIV
 
         catalogo.forEach(element => {
 
@@ -37,16 +37,19 @@ peticion.onreadystatechange = () => {
             let caja = document.querySelector(".caja");
             caja.insertAdjacentHTML("beforeend", autos);
 
-// PRODUCTO MAS CARO
+            // PRODUCTO MAS CARO
 
-catalogo.forEach(element => {
-    
-    if (element.price > precioMax) {
-       precioMax = element.price
-    }});
+            catalogo.forEach(element => {
 
-    if (element.price == precioMax) 
-    {console.log(element.name,element.price)}
+                if (element.price > precioMax) {
+                    precioMax = element.price
+                }
+            });
+
+            if (element.price == precioMax) 
+            
+            {console.log(element.name, element.price)} 
+            
 
 
 
@@ -54,8 +57,8 @@ catalogo.forEach(element => {
     };
 }
 
-
-
-
 peticion.send();
 
+let modal=document.getElementById("modal")
+
+addEventListener ("click", () => {modal.style.display="flex"})

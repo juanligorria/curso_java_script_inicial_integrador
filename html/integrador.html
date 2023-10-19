@@ -28,9 +28,41 @@
             background-color: wheat;
         }
 
-        .preciomax {
-            text-decoration: underline;
+        .mascaro {
+            text-decoration:dashed;
+            size: 20px;
         }
+
+        .modal {
+            display: none; 
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            justify-content: center;
+            align-items: center;
+            background-color: rgba(151, 142, 142, 0.253);
+         
+      }
+
+      .modal-interior {
+         background-color: #fff;
+         padding: 20px;
+         border-radius: 3px;
+         box-shadow: 0px 0px 10px rgba(179, 134, 134, 0.2);
+         position: relative;
+         height: 400px;
+         width: 400px;
+      }
+
+      .cerrar-modal {
+         position: absolute;
+         top: 10px;
+         right: 10px;
+         font-size: 20px;
+         cursor: pointer;
+      }
     </style>
 </head>
 
@@ -48,16 +80,15 @@
     </section>
 
 
+    <!-- MODAL -->
+
+    <div id="modal" class="modal">
+        <div class="modal-interior" id="modal-interior"></div>
+    </div>
+
     <a href="https://portal.edu-apps.com.ar/api/products/?format=json">Api para el tp</a>
 
     <script src="../js/integrador.js"></script>
-</body>
-
-</html>
-</head>
-
-<body>
-
 </body>
 
 </html>
